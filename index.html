@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora interativa</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <div class="resultados">
+        <span id="texto-calculo"></span>
+        <span id="resultado"></span>
+      </div>
+
+      <hr />
+
+      <div class="teclas">
+        <button id="limpar" onclick="limpaResultado()">C</button>
+        <button onclick="calculaPorcentagem">%</button>
+        <button class="operador">÷</button>
+        <button class="operador">×</button>
+        <button class="digito">7</button>
+        <button class="digito">8</button>
+        <button class="digito">9</button>
+        <button class="operador">-</button>
+        <button class="digito">4</button>
+        <button class="digito">5</button>
+        <button class="digito">6</button>
+        <button class="operador">+</button>
+        <button class="digito">1</button>
+        <button class="digito">2</button>
+        <button class="digito">3</button>
+        <button onclick="apagaUltimo()">←</button>
+        <button class="digito">+/-</button>
+        <button class="digito">0</button>
+        <button class="digito">,</button>
+        <button id="igual" onclick="realizaCalculo()">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
